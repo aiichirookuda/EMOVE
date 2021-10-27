@@ -1,0 +1,172 @@
+@charset 'utf-8';
+
+main {
+  padding-top: 150px;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+h2 {
+  display: inline-block;
+  background: linear-gradient(#ff5f5f00 70%, #ff5f5f 30%);
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 4em;
+  padding: 15px 20px;
+  margin-bottom: 80px;
+}
+
+section {
+  background: linear-gradient(
+    135deg,
+    #fcfcfc,
+    #fcfcfc 145px,
+    #2c2c2c 145px,
+    #2c2c2c 148px,
+    #fcfcfc 148px,
+    #fcfcfc
+  );
+}
+
+h3 {
+  font-size: 3.3em;
+  padding: 20px 0 0 20px;
+  margin-bottom: 65px;
+}
+
+article {
+  width: 614px;
+  border-bottom: 2px solid #2c2c2c;
+  margin: 0 auto 85px;
+  padding: 0 30px;
+}
+
+h4 {
+  font-size: 1.6em;
+  margin-bottom: 25px;
+}
+
+figcaption {
+  margin: 15px 0;
+  line-height: 2em;
+}
+
+figcaption p {
+  margin-bottom: 40px;
+}
+
+figcaption ul {
+  margin-bottom: 40px;
+}
+
+figcaption ul li {
+  font-size: 0.8em;
+}
+
+section > p {
+  font-size: 1.6em;
+  margin: 0 auto;
+  text-align: right;
+  width: 674px;
+  margin-bottom: 95px;
+}
+
+.update .flex {
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 85px;
+  padding-bottom: 40px;
+}
+
+.update .box {
+  width: 400px;
+  line-height: 2em;
+}
+
+.update img {
+  width: 140px;
+}
+
+h5 {
+  color: #ff5f5f;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: auto;
+    margin: auto;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+
+  h2 {
+    font-size: 3em;
+    margin-bottom: 50px;
+  }
+
+  h3 {
+    font-size: 2.5em;
+    margin-bottom: 95px;
+  }
+
+  section {
+    background: linear-gradient(
+      135deg,
+      #fcfcfc,
+      #fcfcfc 110px,
+      #2c2c2c 110px,
+      #2c2c2c 112px,
+      #fcfcfc 112px,
+      #fcfcfc
+    );
+  }
+
+  article {
+    width: auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin: 0 auto 50px;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  article img {
+    width: 100%;
+  }
+
+  section > p {
+    width: auto;
+    font-size: 1em;
+    margin-right: 10px;
+  }
+
+  .update .flex {
+    margin-top: 0;
+  }
+
+  .update .flex > p {
+    text-align: center;
+  }
+
+  .update img {
+    width: 100px;
+  }
+
+  .update .box {
+    width: auto;
+  }
+
+  .update h5 {
+    text-align: center;
+  }
+}

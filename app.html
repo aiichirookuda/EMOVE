@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/app.js"></script>
+    <title>EMOVE</title>
+  </head>
+  <body>
+    <header class="flex">
+      <h1>
+        <a href="./index.html"><img src="./images/logo.png" alt="EMOVE" /></a>
+      </h1>
+      <nav class="mainNav">
+        <ul class="flex">
+          <li><a href="#">ホーム</a></li>
+          <li><a href="#">新作・人気</a></li>
+          <li><a href="#">ジャンル</a></li>
+          <li><a href="#">マイリスト</a></li>
+        </ul>
+      </nav>
+      <nav class="subNav">
+        <ul class="flex">
+          <li><img src="./images/icon_search.png" alt="検索" /></li>
+          <li>
+            <a href="#"><img src="./images/icon_user.png" alt="ユーザー" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="mainVisual">
+        <div class="textBox">
+          <h2 id="title"></h2>
+          <p id="overview"></p>
+          <button><a href="#">Play</a></button>
+        </div>
+      </section>
+
+      <section id="trending">
+        <h3>人気作品</h3>
+        <div class="container">
+          <ul class="thumbnail flex"></ul>
+          <button class="previous" type="button"></button>
+          <button class="next" type="button"></button>
+        </div>
+        <div class="video"></div>
+      </section>
+
+      <section id="topRated">
+        <h3>トップレート</h3>
+        <div class="container">
+          <ul class="thumbnail flex"></ul>
+          <button class="previous" type="button"></button>
+          <button class="next" type="button"></button>
+        </div>
+        <div class="video"></div>
+      </section>
+
+      <section id="action">
+        <h3>アクション</h3>
+        <div class="container">
+          <ul class="thumbnail flex"></ul>
+          <button class="previous" type="button"></button>
+          <button class="next" type="button"></button>
+        </div>
+        <div class="video"></div>
+      </section>
+
+      <section id="animation">
+        <h3>アニメ</h3>
+        <div class="container">
+          <ul class="thumbnail flex"></ul>
+          <button class="previous" type="button"></button>
+          <button class="next" type="button"></button>
+        </div>
+        <div class="video"></div>
+      </section>
+
+      <section id="comedy">
+        <h3>コメディ</h3>
+        <div class="container">
+          <ul class="thumbnail flex"></ul>
+          <button class="previous" type="button"></button>
+          <button class="next" type="button"></button>
+        </div>
+        <div class="video"></div>
+      </section>
+
+      <section id="horror">
+        <h3>ホラー</h3>
+        <div class="container">
+          <ul class="thumbnail flex"></ul>
+          <button class="previous" type="button"></button>
+          <button class="next" type="button"></button>
+        </div>
+        <div class="video"></div>
+      </section>
+
+      <section id="romance">
+        <h3>ロマンス</h3>
+        <div class="container">
+          <ul class="thumbnail flex"></ul>
+          <button class="previous" type="button"></button>
+          <button class="next" type="button"></button>
+        </div>
+        <div class="video"></div>
+      </section>
+    </main>
+    <footer>
+      <p class="copyRight">&copy; EMOVE</p>
+    </footer>
+  </body>
+</html>

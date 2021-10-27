@@ -1,0 +1,201 @@
+@charset 'utf-8';
+
+body {
+  background: #2c2c2c;
+  color: #fcfcfc;
+}
+
+header {
+  background: linear-gradient(#2c2c2c, #2c2c2c00);
+}
+
+.mainNav li a {
+  color: #fcfcfc;
+}
+
+.subNav ul {
+  align-items: center;
+}
+
+.mainVisual {
+  height: 80vh;
+  position: relative;
+}
+
+.textBox {
+  width: 980px;
+  margin-left: 100px;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#title {
+  font-size: 2.6em;
+  font-weight: bold;
+  margin-bottom: 45px;
+  color: #fcfcfc;
+  text-shadow: 2px 2px 5px #2c2c2c;
+}
+
+#overview {
+  line-height: 1.5em;
+  margin-bottom: 20px;
+  color: #fcfcfc;
+  text-shadow: 2px 2px 5px #2c2c2c;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #fcfcfca2;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px 30px;
+}
+
+button a::before {
+  content: '▶︎';
+  display: inline-block;
+  margin-right: 3px;
+}
+
+section:not(.mainVisual) {
+  margin: 0 30px;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 30px 0 10px;
+}
+
+.thumbnail {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+  /* スクロールバー非表示 */
+  -ms-overflow-style: none; /* IE, Edge 対応 */
+  scrollbar-width: none; /* Firefox 対応 */
+}
+
+/* スクロールバー非表示 */ /* Chrome, Safari 対応 */
+.thumbnail::-webkit-scrollbar {
+  display: none;
+}
+
+.thumbnail li {
+  margin-right: 20px;
+}
+
+.thumbnail img {
+  height: 200px;
+  border-radius: 5px;
+}
+
+section div {
+  position: relative;
+}
+
+.previous,
+.next {
+  width: 30px;
+  height: 100%;
+  background-color: #ff5f5fab;
+  border-radius: 5px;
+  color: #fcfcfc;
+  font-size: 0.8em;
+  padding: 0;
+
+  position: absolute;
+  top: 0;
+}
+
+.previous {
+  left: 0;
+  display: none;
+}
+
+.previous::before {
+  content: '◀';
+}
+
+.next {
+  right: 0;
+  display: none;
+}
+
+.next::before {
+  content: '▶︎';
+}
+
+.video {
+  display: none;
+}
+
+.slideUp {
+  background-color: transparent;
+  color: #fcfcfc;
+  font-size: 1.5em;
+  vertical-align: top;
+  padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .flex {
+    display: flex;
+  }
+
+  .textBox {
+    width: auto;
+    margin: 0 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #title {
+    font-size: 2em;
+  }
+
+  #overview {
+    font-size: 0.8em;
+  }
+
+  section:not(.mainVisual) {
+    margin: 0 10px;
+  }
+
+  .video {
+    width: 98%;
+  }
+
+  iframe {
+    width: 89%;
+  }
+
+  .mainNav {
+    display: block;
+    margin-bottom: 0;
+
+    position: fixed;
+    top: 65px;
+  }
+
+  .mainNav li a {
+    padding: 15px 5px;
+    text-shadow: 1px 1px 5px #2c2c2c;
+  }
+
+  .subNav {
+    display: block;
+  }
+
+  header nav li a {
+    margin-bottom: 0;
+  }
+}

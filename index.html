@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/index.js"></script>
+    <title>EMOVE | HOME</title>
+  </head>
+  <body>
+    <script src="./js/header.js"></script>
+    <main>
+      <section class="mainVisual">
+        <div class="loading">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+          <span>Loading</span>
+        </div>
+        <h2>Welcome to EMOVE.</h2>
+        <div id="ytPlayerWrap">
+          <div
+            id="ytPlayer"
+            data-property="{
+          containment: '#ytPlayerWrap',
+          videoURL: 'https://youtu.be/i0uR7RFB-BE',
+          autoPlay: true,
+          loop: true,
+          mute: true,
+          startAt: 24,
+          showControls: false,
+          showYTLogo: false,
+          stopMovieOnBlur: false,
+          onReady: ()=>{$('.loading').fadeOut(), $('h2').fadeIn(2500), $(()=>{setTimeout(()=>{$('.inactive').addClass('active')},3000)})},
+      }"
+          ></div>
+        </div>
+        <p class="scroll inactive">Please scroll down</p>
+      </section>
+
+      <section class="first flex">
+        <div class="bgImage">ポスター</div>
+        <div class="text">
+          <div class="box">
+            <h3>EMOVEは全部観れる。</h3>
+            <p>
+              映画、ドラマ、アニメが100,000本以上が月額500円で見放題。観かったあの作品がきっと見つかる。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="second">
+        <h3>どこよりも多い作品数</h3>
+        <ul class="listRow" id="trending"></ul>
+        <ul class="listRow" id="topRated" dir="rtl"></ul>
+      </section>
+
+      <section class="third flex">
+        <div class="bgImage">カップルの画像</div>
+        <div class="text">
+          <div class="box">
+            <h3>違う場所、おんなじ感動</h3>
+            <p>
+              新機能EMOVE-Shareを利用すれば、遠く離れた家族、友達、恋人とリアルタイムにオンライン通話をしながら、一緒に作品を楽しむことができます。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="fourth">
+        <div class="inner flex">
+          <article>
+            <h4>新着作品はリアルタイム上映会</h4>
+            <p>
+              <img src="./images/image03.jpg" alt="リアルタイム上映会" />
+            </p>
+            <p>
+              新着作品の配信日は、オンラインシアターを開放。リアルタイムコメント機能で他のユーザーと一緒に盛り上がろう。
+            </p>
+          </article>
+          <article>
+            <h4>LIVE配信サービスと連携</h4>
+            <p><img src="./images/image04.jpg" alt="視聴配信の様子" /></p>
+            <p>
+              EMOVEで配信されている作品を、YouTube、TwitchなどのLIVE配信サービス上で視聴配信が可能。視聴会参加にはEMOVEアカウントが必要です。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <p class="bottomBtn"><a href="./signUp.html">今すぐつかう</a></p>
+    </main>
+    <footer>
+      <div class="flex inner">
+        <h1>
+          <a href="./index.html"><img src="./images/logo.png" alt="EMOVE" /></a>
+        </h1>
+        <ul class="flex">
+          <li>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><img src="./images/icon_youtube.png" alt="YouTube"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" target="_blank"
+              ><img src="./images/icon_tw.png" alt="twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="./images/icon_insta.png" alt="instagram"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <p class="copyRight inner">&copy; EMOVE</p>
+    </footer>
+    <script src="./js/common.js"></script>
+  </body>
+</html>

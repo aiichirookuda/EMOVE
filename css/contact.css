@@ -1,0 +1,121 @@
+@charset 'utf-8';
+
+main {
+  padding-top: 150px;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+h2 {
+  display: inline-block;
+  background: linear-gradient(#ff5f5f00 70%, #ff5f5f 30%);
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 4em;
+  padding: 15px 20px;
+  margin-bottom: 80px;
+}
+
+dl dt {
+  float: left;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+dl dd {
+  margin: 0 0 90px 270px;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+select {
+  line-height: 1.5em;
+  height: 42px;
+  width: 30%;
+  border: 2px solid #2c2c2c;
+  border-radius: 5px;
+  font-size: 0.7em;
+  background-color: #fcfcfc;
+}
+
+dl dd input {
+  width: 98%;
+  height: 42px;
+  border: 2px solid #2c2c2c;
+  border-radius: 5px;
+  font-size: 0.7em;
+  background-color: #fcfcfc;
+}
+
+textarea {
+  width: 98%;
+  border: 2px solid #2c2c2c;
+  border-radius: 5px;
+  font-size: 0.7em;
+  resize: none;
+  background-color: #fcfcfc;
+}
+
+span {
+  color: #ff5f5f;
+  font-size: 0.7em;
+}
+
+.alert {
+  color: #ff5f5f;
+  font-size: 0.7em;
+}
+
+button {
+  display: block;
+  background-color: #ff5f5f;
+  border-radius: 10px;
+  color: #fcfcfc;
+  cursor: pointer;
+  margin: 0 auto 70px;
+  padding: 15px 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: auto;
+    margin: auto;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+
+  h2 {
+    font-size: 3em;
+    margin-bottom: 50px;
+  }
+
+  form {
+    margin: 0 10px;
+  }
+
+  dl dt {
+    float: none;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  dl dd {
+    margin: 0 0 15px 0;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  select {
+    width: 100%;
+    font-size: 0.9em;
+  }
+
+  dl dd input {
+    font-size: 0.9em;
+  }
+}

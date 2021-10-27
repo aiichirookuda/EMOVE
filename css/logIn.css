@@ -1,0 +1,117 @@
+@charset 'utf-8';
+
+body {
+  height: 100vh;
+}
+
+header {
+  background: transparent;
+}
+
+form {
+  background-color: #fcfcfc;
+  border-radius: 10px;
+  width: 500px;
+  padding: 25px 45px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+h2 {
+  margin-bottom: 25px;
+  line-height: 2em;
+}
+
+dl {
+  margin-bottom: 25px;
+}
+
+dl dt {
+  color: #22b573;
+  line-height: 2em;
+  font-weight: bold;
+}
+
+dl:last-child {
+  margin-bottom: 0;
+}
+
+dl dd {
+  line-height: 2em;
+}
+
+dl dd input {
+  height: 2em;
+  width: 75%;
+  border: none;
+  background-color: #fcfcfc;
+  font-size: 1em;
+}
+
+dl dd input:focus {
+  outline: none;
+}
+
+dl dd::before {
+  content: '→';
+  color: #ff5f5f;
+}
+
+form p {
+  margin-bottom: 25px;
+  line-height: 2em;
+  text-align: right;
+  text-decoration: underline;
+}
+
+button {
+  float: right;
+  background-color: #fcfcfc;
+  border: 1px solid #2c2c2c;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    padding: 25px 30px;
+    left: 10%;
+    transform: translateY(-50%) translateX(-5%);
+  }
+
+  h2,
+  dl,
+  form p {
+    margin-bottom: 0;
+  }
+
+  dl dd input {
+    width: 90%;
+  }
+
+  header.flex {
+    display: flex;
+  }
+
+  header nav li a {
+    font-size: 0.8em;
+    margin-bottom: 0;
+    padding: 10px;
+  }
+
+  .subNav {
+    display: block;
+    width: 110px;
+  }
+}

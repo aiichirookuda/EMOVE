@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/constact.js"></script>
+    <title>EMOVE | CONTACT</title>
+  </head>
+  <body>
+    <script src="./js/header.js"></script>
+    <main class="inner">
+      <div class="wrapper">
+        <h2>Contact</h2>
+
+        <form action="sample" method="post">
+          <dl class="typeSelect">
+            <dt>
+              <label for="typeSelect">お問い合わせ内容<span>※</span></label>
+            </dt>
+            <dd>
+              <select name="inquiryTypes" id="typeSelect">
+                <option value="">選択してください</option>
+                <option value="お悩み">サービスについてのお悩み</option>
+                <option value="ご要望">配信作品のご要望</option>
+                <option value="その他">その他</option>
+              </select>
+              <p class="alert">お問い合わせ内容を選択してください</p>
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>
+              <label for="name">お名前／会社名<span>※</span></label>
+            </dt>
+            <dd>
+              <input type="text" id="name" />
+              <p class="alert">お名前／会社名を入力してください</p>
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>
+              <label for="email">メールアドレス<span>※</span></label>
+            </dt>
+            <dd>
+              <input type="email" name="email" id="email" />
+              <p class="alert">メールアドレスを入力してください</p>
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>
+              <label for="verification"
+                >メールアドレス<span>※</span><br class="pc" />（確認用）</label
+              >
+            </dt>
+            <dd>
+              <input type="email" name="verification" id="verification" />
+              <p class="alert">メールアドレスが一致しません</p>
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>
+              <label for="inquiry">お問い合わせ<span>※</span></label>
+            </dt>
+            <dd>
+              <textarea
+                name="inquiry"
+                id="inquiry"
+                cols="30"
+                rows="20"
+              ></textarea>
+              <p class="alert">お問い合わせ内容を入力してください</p>
+            </dd>
+          </dl>
+
+          <button type="submit" formaction="./contact.html">送信</button>
+        </form>
+      </div>
+    </main>
+    <script src="./js/footer.js"></script>
+    <script src="./js/common.js"></script>
+  </body>
+</html>
